@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro l Cinescape</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="cont-home">
+
+        <div id="panel-Lateral">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <h2>Editar Mi cuenta</h2>
+            <ul>
+                <a href="#">Home</a>
+                <a href="#">Aventura</a>
+                <a href="#">Animadas</a>
+                <a href="#">Drama</a>
+                <a href="#">Comedia</a>
+                <a href="#">Ficción</a>
+                <a href="#">Nacionales</a>
+            </ul>
+
+            <a class="cerrarSesion" href="">Cerrar Sesión</a>
+        </div>
+
+        <div class="header">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <a href=""><img src="img/icon-logo.png" alt=""></a>
+            <a href=""><img src="img/user.png" alt=""></a>
+        </div>
+        
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animales</button>
+            <button>Drama</button>
+        </div>
+
+        <p id="copy-categori"> Descubre emocionantes peliculas de aventura llenas de accion, peligro y exoticós lugares en Cinescape </p>
+        
+        <div id="cont-aventuras">
+            <h2>Estrenos</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <div class="caratulas" onclick="openModal(this)" data-titulo="Guardianes de la Galaxia Vol. 3" data-estreno="2023" data-genero="Aventura" data-descripcion="Una película de aventuras espaciales."><img src="img/guardianes3.jpg" alt=""></div>
+                <div class="caratulas" onclick="openModal(this)" data-titulo="Barbie" data-estreno="2022" data-genero="Animación" data-descripcion="Una película animada protagonizada por Barbie."><img src="img/barbie.jpeg" alt=""></div>
+                <div class="caratulas" onclick="openModal(this)" data-titulo="Elemental" data-estreno="2024" data-genero="Fantasía" data-descripcion="Una película de fantasía sobre poderes elementales."><img src="img/Elemental.jpg" alt=""></div>
+            </div>
+            
+            <br>
+            <div id="cont-caratuas">
+                <h2>Proximamente</h2>
+            <hr>
+            <div class="cont-caratulas">
+                <div class="caratulas" onclick="openModal(this)" data-titulo="Fabelman" data-estreno="2023" data-genero="Drama" data-descripcion="Una película dramática sobre la vida de un escritor."><img src="img/fabelman_drama.jpg" alt=""></div>
+                <div class="caratulas" onclick="openModal(this)" data-titulo="The Flash" data-estreno="2022" data-genero="Acción, Ciencia ficción" data-descripcion="Una película de acción basada en el superhéroe de DC Comics, The Flash."><img src="img/flash.jpg" alt=""></div>
+                <div class="caratulas" onclick="openModal(this)" data-titulo="Gilgamesh" data-estreno="2024" data-genero="Fantasía, Aventura" data-descripcion="Una película de aventuras épicas basada en la epopeya de Gilgamesh."><img src="img/Gilgamesh-poster.jpg" alt=""></div>
+            </div>
+            
+            </div>
+        </div>
+        
+        <div id="modal-pelicula" class="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" src="" alt="">
+            <div class="modal-description">
+                <h2>Titulo de la película</h2>
+                <p>Estreno: fecha</p>
+                <p>Género: </p>
+                <p>Descripción: </p>
+            </div>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
